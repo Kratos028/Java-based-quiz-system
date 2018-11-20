@@ -1,0 +1,21 @@
+
+<!--
+
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="BaseBuildScript" basedir="." default="First">
+
+<target name="compile">
+<javac includeantruntime="false" srcdir= "." destdir= "."/>
+
+</target>
+<target name="run" depends="compile">
+	<java classname="First">
+		<classpath path = "."/>
+	</java>
+</target>
+</project>
+
+<root>
+    
+</root>
